@@ -1,0 +1,230 @@
+/* ==============================================
+   JobVault — Teal/Emerald Professional Theme
+   ============================================== */
+
+:root {
+  --jv-primary: #0d7377;
+  --jv-primary-dark: #095c5f;
+  --jv-primary-light: #14919b;
+  --jv-accent: #10b981;
+  --jv-accent-light: #d1fae5;
+  --jv-bg-light: #f0fdf4;
+  --jv-bg-warm: #f8fafb;
+  --jv-text-dark: #1e293b;
+  --jv-text-muted: #64748b;
+  --jv-shadow-soft: 0 2px 12px rgba(13, 115, 119, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--jv-text-dark);
+  background-color: var(--jv-bg-warm);
+}
+
+/* ---- Primary color utilities ---- */
+
+.bg-primary-custom {
+  background-color: var(--jv-primary) !important;
+}
+
+.text-primary-custom {
+  color: var(--jv-primary) !important;
+}
+
+.text-success-custom {
+  color: var(--jv-accent) !important;
+}
+
+.bg-light-custom {
+  background-color: var(--jv-bg-light) !important;
+}
+
+/* ---- Buttons ---- */
+
+.btn-primary-custom {
+  background-color: var(--jv-primary);
+  border-color: var(--jv-primary);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+  background-color: var(--jv-primary-dark);
+  border-color: var(--jv-primary-dark);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(13, 115, 119, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-primary-custom:active {
+  transform: translateY(0);
+}
+
+/* ---- Navbar ---- */
+
+.navbar-dark .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.2s;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Login card ---- */
+
+.login-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.login-icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--jv-primary), var(--jv-accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card .form-control:focus,
+.login-card .input-group-text {
+  border-color: var(--jv-primary-light);
+}
+
+.login-card .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 115, 119, 0.15);
+}
+
+/* ---- Job cards ---- */
+
+.job-card {
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(13, 115, 119, 0.12);
+  border-color: var(--jv-primary-light);
+}
+
+.job-card:focus {
+  outline: 2px solid var(--jv-primary);
+  outline-offset: 2px;
+}
+
+.job-card .card-title {
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+/* ---- Job type badges ---- */
+
+.badge-fulltime {
+  background-color: #0d7377;
+  color: #fff;
+}
+
+.badge-parttime {
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+.badge-contract {
+  background-color: #d97706;
+  color: #fff;
+}
+
+.badge-remote {
+  background-color: #10b981;
+  color: #fff;
+}
+
+/* ---- Filter badges ---- */
+
+.filter-badge {
+  background-color: var(--jv-primary);
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35em 0.65em;
+}
+
+/* ---- Pagination ---- */
+
+.page-item.active .page-link {
+  background-color: var(--jv-primary);
+  border-color: var(--jv-primary);
+}
+
+.page-link {
+  color: var(--jv-primary);
+  transition: all 0.15s ease;
+}
+
+.page-link:hover {
+  color: var(--jv-primary-dark);
+  background-color: var(--jv-accent-light);
+}
+
+/* ---- Search bar ---- */
+
+.input-group-lg .form-control:focus {
+  box-shadow: none;
+}
+
+.input-group-lg {
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.2s;
+}
+
+.input-group-lg:focus-within {
+  border-color: var(--jv-primary-light);
+}
+
+/* ---- Form controls ---- */
+
+.form-select:focus {
+  border-color: var(--jv-primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(13, 115, 119, 0.15);
+}
+
+/* ---- Detail page sections ---- */
+
+section h5 {
+  border-left: 3px solid var(--jv-accent);
+  padding-left: 0.75rem;
+}
+
+/* ---- Footer ---- */
+
+footer {
+  background-color: var(--jv-primary-dark) !important;
+}
+
+/* ---- Scrollbar (webkit) ---- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--jv-primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
